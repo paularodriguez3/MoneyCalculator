@@ -1,5 +1,7 @@
 package software.ulpgc.MoneyCalculator;
 
+import software.ulpgc.MoneyCalculator.model.Currency;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -8,11 +10,9 @@ import java.util.ArrayList;
 import java.util.List;
 public class TsvCurrencyLoader implements CurrencyLoader {
     private final File file;
-
     public TsvCurrencyLoader(File file) {
         this.file = file;
     }
-
     @Override
     public List<Currency> load() throws RuntimeException {
         try {
@@ -21,11 +21,9 @@ public class TsvCurrencyLoader implements CurrencyLoader {
             throw new RuntimeException(e);
         }
     }
-
     private List<Currency> load(FileReader reader) throws IOException {
         return load(new BufferedReader(reader));
     }
-
     private List<Currency> load(BufferedReader reader) throws IOException {
         List<Currency> result = new ArrayList<>();
         while (true) {
@@ -35,13 +33,12 @@ public class TsvCurrencyLoader implements CurrencyLoader {
         }
         return result;
     }
-
     private Currency toCurrency(String line) {
         return toCurrency(line.split("\t"));
     }
 
     private Currency toCurrency(String[] fields) {
-        return new Currency(fields[0], fields[1], fields.length == 2 ? "" : fields[2]);
+        return new Currency(fields[0], fields[1]);
     }
 
 }
