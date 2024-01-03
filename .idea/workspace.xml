@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e7a3d4c-86a9-4b72-8a7a-487781c373ae" name="Changes" comment="Fourth Version of Money Calculator. Fixed.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="3e7a3d4c-86a9-4b72-8a7a-487781c373ae" name="Changes" comment="Fifth Version of Money Calculator.">
       <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/MoneyCalculator/swing/SwingMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/MoneyCalculator/swing/SwingMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +82,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704241325954</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fifth Version of Money Calculator.">
+      <option name="closed" value="true" />
+      <created>1704302336046</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1704302336046</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -91,6 +98,7 @@
     <MESSAGE value="Second Version of Money Calculator." />
     <MESSAGE value="Third Version of Money Calculator." />
     <MESSAGE value="Fourth Version of Money Calculator. Fixed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fourth Version of Money Calculator. Fixed." />
+    <MESSAGE value="Fifth Version of Money Calculator." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fifth Version of Money Calculator." />
   </component>
 </project>

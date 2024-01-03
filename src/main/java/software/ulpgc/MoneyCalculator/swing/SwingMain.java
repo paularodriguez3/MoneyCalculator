@@ -44,16 +44,16 @@ public class SwingMain extends JFrame {
         this.setLocationRelativeTo(null);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setLayout(new BorderLayout());
-        this.getContentPane().setBackground(new Color(255, 192, 203));
+        this.getContentPane().setBackground(new Color(255, 240, 245));
 
         JLabel titleLabel = new JLabel("Money Calculator", JLabel.CENTER);
-        titleLabel.setFont(new Font("Script MT Bold", Font.BOLD | Font.ITALIC, 30));
-        titleLabel.setForeground(new Color(128, 0, 128));
+        titleLabel.setFont(new Font("Segoe UI", Font.BOLD, 30));
+        titleLabel.setForeground(new Color(219, 112, 147));
         this.add(titleLabel, BorderLayout.NORTH);
 
         JPanel mainPanel = new JPanel(new GridLayout(3, 1));
         mainPanel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
-        mainPanel.setBackground(new Color(255, 218, 185));
+        mainPanel.setBackground(new Color(255, 240, 245));
 
         mainPanel.add(createMoneyDialog());
         mainPanel.add(createCurrencyDialog());
@@ -67,10 +67,12 @@ public class SwingMain extends JFrame {
 
     private Component createCalculateButton() {
         JButton button = new JButton("Calculate");
-        button.setPreferredSize(new Dimension(100, 40));
-        button.setFont(new Font("Arial", Font.PLAIN, 16));
-        button.setBackground(new Color(255, 20, 147));
+        button.setPreferredSize(new Dimension(200, 40));
+        button.setFont(new Font("Segoe UI", Font.PLAIN, 16));
+        button.setBackground(new Color(219, 112, 147));
         button.setForeground(Color.white);
+        button.setFocusPainted(false);
+        button.setBorderPainted(false);
         button.addActionListener(e -> commands.get("Intercambio monetario").execute());
         return button;
     }
