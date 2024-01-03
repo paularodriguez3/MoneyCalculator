@@ -9,9 +9,11 @@ import java.util.List;
 
 public class SwingCurrencyDialog extends JPanel implements CurrencyDialog {
     private JComboBox<Currency> currencySelector;
+    private List<Currency> currencies;
 
     @Override
     public CurrencyDialog define(List<Currency> currencies) {
+        this.currencies = currencies; // Assign the provided currencies to the field
         add(createCurrencySelector(currencies));
         return this;
     }
@@ -25,7 +27,10 @@ public class SwingCurrencyDialog extends JPanel implements CurrencyDialog {
 
     @Override
     public Currency get() {
-        return null;
+        if (currencies != null && !currencies.isEmpty()) {
+            return currencies.get(0);
+        } else {
+            throw new IllegalStateException("No hay divisas disponibles");
+        }
     }
-
 }

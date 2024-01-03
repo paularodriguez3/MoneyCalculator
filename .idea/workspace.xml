@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e7a3d4c-86a9-4b72-8a7a-487781c373ae" name="Changes" comment="Second Version of Money Calculator." />
+    <list default="true" id="3e7a3d4c-86a9-4b72-8a7a-487781c373ae" name="Changes" comment="Third Version of Money Calculator.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/MoneyCalculator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/MoneyCalculator/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/MoneyCalculator/swing/SwingMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/MoneyCalculator/swing/SwingMain.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,12 +68,21 @@
       <option name="project" value="LOCAL" />
       <updated>1704239727937</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Third Version of Money Calculator.">
+      <option name="closed" value="true" />
+      <created>1704240274472</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704240274472</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Version of Money Calculator." />
     <MESSAGE value="Second Version of Money Calculator." />
-    <option name="LAST_COMMIT_MESSAGE" value="Second Version of Money Calculator." />
+    <MESSAGE value="Third Version of Money Calculator." />
+    <option name="LAST_COMMIT_MESSAGE" value="Third Version of Money Calculator." />
   </component>
 </project>

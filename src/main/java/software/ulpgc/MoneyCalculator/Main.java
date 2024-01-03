@@ -13,26 +13,16 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        CurrencyLoader loader = new TsvCurrencyLoader(new File("currencies.tsv"));
-        List<Currency> currencies = loader.load();
-
-        System.out.println("Monedas cargadas:");
-        for (Currency currency : currencies) {
-            System.out.println(currency);
-        }
-
         MockCurrencyLoader currencyLoader = new MockCurrencyLoader();
-        currencies = currencyLoader.load();
+        List<Currency> currencies = currencyLoader.load();
 
         MoneyDialog moneyDialog = new CliMoneyDialog().define(currencies);
 
         CurrencyDialog currencyDialog = new CliCurrencyDialog().define(currencies);
-
         MoneyDisplay moneyDisplay = new MockMoneyDisplay();
         ExchangeRateLoader exchangeRateLoader = new MockExchangeRateLoader();
         ExchangeMoneyCommand exchangeMoneyCommand = new ExchangeMoneyCommand(moneyDialog, currencyDialog, exchangeRateLoader, moneyDisplay);
-
-
         exchangeMoneyCommand.execute();
     }
+
 }

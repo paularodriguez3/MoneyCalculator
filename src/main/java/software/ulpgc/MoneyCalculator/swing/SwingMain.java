@@ -40,13 +40,13 @@ public class SwingMain extends JFrame {
 
     public SwingMain() throws HeadlessException {
         this.setTitle("Money Calculator");
-        this.setSize(450, 450);
+        this.setSize(400, 400);
         this.setLocationRelativeTo(null);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setLayout(new FlowLayout());
 
         JLabel titleLabel = new JLabel("Money calculator", JLabel.CENTER);
-        titleLabel.setFont(new Font("Fira Code", Font.BOLD, 40));
+        titleLabel.setFont(new Font("Fira Code", Font.BOLD, 30));
         this.add(titleLabel, BorderLayout.NORTH);
 
         this.add(createMoneyDialog());
@@ -60,7 +60,7 @@ public class SwingMain extends JFrame {
 
     private Component createCalculateButton() {
         JButton button = new JButton("Calculate");
-        button.setPreferredSize(new Dimension(150, 30));
+        button.setPreferredSize(new Dimension(100, 20));
         button.addActionListener(e -> commands.get("Intercambio monetario").execute());
         return button;
     }
