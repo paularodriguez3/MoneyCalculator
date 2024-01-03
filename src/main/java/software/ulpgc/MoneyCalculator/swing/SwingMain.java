@@ -30,7 +30,7 @@ public class SwingMain extends JFrame {
                 new MockExchangeRateLoader(),
                 main.moneyDisplay()
         );
-        main.add("Exchange Money", command);
+        main.add("Intercambio monetario", command);
         main.setVisible(true);
     }
 
@@ -40,13 +40,13 @@ public class SwingMain extends JFrame {
 
     public SwingMain() throws HeadlessException {
         this.setTitle("Money Calculator");
-        this.setSize(600, 600);
+        this.setSize(450, 450);
         this.setLocationRelativeTo(null);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setLayout(new FlowLayout());
 
         JLabel titleLabel = new JLabel("Money calculator", JLabel.CENTER);
-        titleLabel.setFont(new Font("Arial", Font.BOLD, 45));
+        titleLabel.setFont(new Font("Fira Code", Font.BOLD, 40));
         this.add(titleLabel, BorderLayout.NORTH);
 
         this.add(createMoneyDialog());
@@ -60,8 +60,8 @@ public class SwingMain extends JFrame {
 
     private Component createCalculateButton() {
         JButton button = new JButton("Calculate");
-        button.setPreferredSize(new Dimension(130, 25));
-        button.addActionListener(e -> commands.get("Exchange Money").execute());
+        button.setPreferredSize(new Dimension(150, 30));
+        button.addActionListener(e -> commands.get("Intercambio monetario").execute());
         return button;
     }
 
@@ -83,7 +83,6 @@ public class SwingMain extends JFrame {
         return dialog;
     }
 
-    // ---------- x ---------- x ----------
 
     private MoneyDisplay moneyDisplay() {
         return moneyDisplay;
@@ -96,8 +95,6 @@ public class SwingMain extends JFrame {
     private MoneyDialog moneyDialog() {
         return moneyDialog;
     }
-
-    // ---------- x ---------- x ----------
 
     public MoneyDialog getMoneyDialog() {
         return moneyDialog;

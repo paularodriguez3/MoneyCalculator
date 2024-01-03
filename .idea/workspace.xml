@@ -4,38 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e7a3d4c-86a9-4b72-8a7a-487781c373ae" name="Changes" comment="First Version of Money Calculator.">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/MoneyCalculator/CurrencyDialog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/MoneyCalculator/ExchangeRateLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/MoneyCalculator/MoneyDialog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/MoneyCalculator/MoneyDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/MoneyCalculator/cli/CliCurrencyDialog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/MoneyCalculator/cli/CliMoneyDialog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/MoneyCalculator/control/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/MoneyCalculator/control/ExchangeMoneyCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/MoneyCalculator/fixerws/FixerAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/MoneyCalculator/fixerws/FixerCurrencyLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/MoneyCalculator/mock/MockCurrencyDialog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/MoneyCalculator/mock/MockCurrencyLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/MoneyCalculator/mock/MockExchangeRateLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/MoneyCalculator/mock/MockMoneyDialog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/MoneyCalculator/mock/MockMoneyDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/MoneyCalculator/model/Currency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/MoneyCalculator/model/ExchangeRate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/MoneyCalculator/model/Money.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/MoneyCalculator/swing/SwingCurrencyDialog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/MoneyCalculator/swing/SwingMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/MoneyCalculator/swing/SwingMoneyDialog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/MoneyCalculator/swing/SwingMoneyDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/MoneyCalculator/Currency.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/MoneyCalculator/CurrencyLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/MoneyCalculator/CurrencyLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/MoneyCalculator/ExchangeRate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/MoneyCalculator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/MoneyCalculator/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/MoneyCalculator/Money.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/software/ulpgc/MoneyCalculator/TsvCurrencyLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/software/ulpgc/MoneyCalculator/TsvCurrencyLoader.java" afterDir="false" />
-    </list>
+    <list default="true" id="3e7a3d4c-86a9-4b72-8a7a-487781c373ae" name="Changes" comment="Second Version of Money Calculator." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,11 +56,20 @@
       <option name="project" value="LOCAL" />
       <updated>1704237073392</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Second Version of Money Calculator.">
+      <option name="closed" value="true" />
+      <created>1704239727937</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1704239727937</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Version of Money Calculator." />
-    <option name="LAST_COMMIT_MESSAGE" value="First Version of Money Calculator." />
+    <MESSAGE value="Second Version of Money Calculator." />
+    <option name="LAST_COMMIT_MESSAGE" value="Second Version of Money Calculator." />
   </component>
 </project>
