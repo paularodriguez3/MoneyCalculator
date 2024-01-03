@@ -43,24 +43,34 @@ public class SwingMain extends JFrame {
         this.setSize(400, 400);
         this.setLocationRelativeTo(null);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        this.setLayout(new FlowLayout());
+        this.setLayout(new BorderLayout());
+        this.getContentPane().setBackground(new Color(255, 192, 203));
 
-        JLabel titleLabel = new JLabel("Money calculator", JLabel.CENTER);
-        titleLabel.setFont(new Font("Fira Code", Font.BOLD, 30));
+        JLabel titleLabel = new JLabel("Money Calculator", JLabel.CENTER);
+        titleLabel.setFont(new Font("Script MT Bold", Font.BOLD | Font.ITALIC, 30));
+        titleLabel.setForeground(new Color(128, 0, 128));
         this.add(titleLabel, BorderLayout.NORTH);
 
-        this.add(createMoneyDialog());
-        this.add(createCurrencyDialog());
-        this.add(createMoneyDisplay());
-        this.add(createCalculateButton());
+        JPanel mainPanel = new JPanel(new GridLayout(3, 1));
+        mainPanel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
+        mainPanel.setBackground(new Color(255, 218, 185));
+
+        mainPanel.add(createMoneyDialog());
+        mainPanel.add(createCurrencyDialog());
+        mainPanel.add(createMoneyDisplay());
+
+        this.add(mainPanel, BorderLayout.CENTER);
+        this.add(createCalculateButton(), BorderLayout.SOUTH);
 
         this.setVisible(true);
-
     }
 
     private Component createCalculateButton() {
         JButton button = new JButton("Calculate");
-        button.setPreferredSize(new Dimension(100, 20));
+        button.setPreferredSize(new Dimension(100, 40));
+        button.setFont(new Font("Arial", Font.PLAIN, 16));
+        button.setBackground(new Color(255, 20, 147));
+        button.setForeground(Color.white);
         button.addActionListener(e -> commands.get("Intercambio monetario").execute());
         return button;
     }
@@ -82,7 +92,6 @@ public class SwingMain extends JFrame {
         this.moneyDialog = dialog;
         return dialog;
     }
-
 
     private MoneyDisplay moneyDisplay() {
         return moneyDisplay;
@@ -111,5 +120,4 @@ public class SwingMain extends JFrame {
     public Map<String, Command> getCommands() {
         return commands;
     }
-
 }
