@@ -26,7 +26,7 @@ Este proyecto implementa un conversor de divisa en Java, siguiendo un diseño mo
 - **MockMoneyDialog.java:** Implementa la interfaz MoneyDialog con datos simulados.
 - **MockMoneyDisplay.java:** Implementa la interfaz MoneyDisplay para mostrar resultados simulados.
 
-### **model:* Contiene las clases que representan el modelo de datos.
+### **model:** Contiene las clases que representan el modelo de datos.
 
 - **Currency.java:** Clase que representa una divisa con código y nombre.
 - **ExchangeRate.java:** Clase que representa una tasa de cambio entre dos divisas en una fecha específica.
